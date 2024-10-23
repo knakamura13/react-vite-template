@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "lib": ["ES2023"],
+        "module": "ESNext",
+        "skipLibCheck": true,
+        /* Bundler mode */
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "noEmit": true,
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        /* Path aliases (duplicated from base tsconfig.json for webstorm compliance) */
+        "paths": {
+            "@assets/": ["src/assets/"],
+            "@assets/*": ["src/assets/*"],
+            "@components/": ["src/components/"],
+            "@components/*": ["src/components/*"],
+            "@pages/": ["src/pages/"],
+            "@pages/*": ["src/pages/*"],
+            "@public/": ["public/"],
+            "@public/*": ["public/*"],
+            "@store/": ["src/store/"],
+            "@store/*": ["src/store/*"]
+        }
+    },
+    "include": ["vite.config.ts"]
+}

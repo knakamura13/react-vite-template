@@ -1,0 +1,17 @@
+.counter {
+    .counter-display {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 0 1rem;
+    }
+
+    .counter-buttons {
+        display: flex;
+        gap: 1rem;
+
+        Button {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+}
