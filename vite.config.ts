@@ -13,5 +13,9 @@ export default defineConfig({
             '@public': path.resolve(__dirname, './public'),
             '@store': path.resolve(__dirname, './src/store')
         }
-    }
+    },
+    server: {
+        host: '0.0.0.0',  // Ensures the server listens on all available interfaces
+        port: process.env.PORT ? parseInt(process.env.PORT) : 3000,  // Use the PORT environment variable or fallback to 3000
+    },
 });

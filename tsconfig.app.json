@@ -10,7 +10,9 @@
         "allowImportingTsExtensions": true,
         "isolatedModules": true,
         "moduleDetection": "force",
-        "noEmit": true,
+        "noEmit": false,
+        "emitDeclarationOnly": true,
+        "composite": true,
         "jsx": "react-jsx",
         /* Linting */
         "strict": true,
@@ -18,6 +20,7 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
         /* Path aliases (duplicated from base tsconfig.json for webstorm compliance) */
+        "baseUrl": "./",
         "paths": {
             "@assets/": ["src/assets/"],
             "@assets/*": ["src/assets/*"],

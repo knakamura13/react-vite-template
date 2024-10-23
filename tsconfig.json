@@ -9,6 +9,10 @@
         }
     ],
     "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "esModuleInterop": true,
         "baseUrl": "./",
         "paths": {
             "@assets/": ["src/assets/"],
@@ -21,7 +25,7 @@
             "@public/*": ["public/*"],
             "@store/": ["src/store/"],
             "@store/*": ["src/store/*"]
-        }
+        },
     },
     "include": ["src"]
 }
